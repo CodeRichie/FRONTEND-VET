@@ -1,0 +1,9 @@
+.customInputDesign {
+    margin: 1em;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-radius: 0em;
+    height: 3em;
+    width: 20em;
+}
