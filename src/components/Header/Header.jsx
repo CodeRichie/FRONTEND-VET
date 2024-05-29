@@ -23,7 +23,7 @@ function Header() {
         <Container>
           <Navbar.Brand href="/home">
           <img
-              src="../src/images/LogoBTS.png"
+              src="../src/images/logoVA.png"
               width="50"
               height="50"
               className="d-inline-block align-top"
