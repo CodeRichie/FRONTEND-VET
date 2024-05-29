@@ -81,7 +81,7 @@ export const CreateAppointments = () => {
               <Form.Label>Descripción</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Descripción del tattoo.."
+                placeholder="Que le sucede a su mascota?"
                 {...register("description")}
                 isInvalid={!!errors.description}
               />
@@ -94,7 +94,7 @@ export const CreateAppointments = () => {
               <Form.Label>Precio</Form.Label>
               <Form.Control
                 type="number"
-                placeholder="Precio del tattoo.."
+                placeholder="Precio aproximado.."
                 {...register("price")}
                 isInvalid={!!errors.price}
               />
