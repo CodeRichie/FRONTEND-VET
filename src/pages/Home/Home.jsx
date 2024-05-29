@@ -9,7 +9,7 @@ export const Home = () => {
       <Header/>
       <div className='main'>
           <div className="overlay"></div>
-          <img src="../src/images/TATTOOFONDO.jpg"></img>
+          <img src="../src/images/mascotas.jpg"></img>
           <div className="content">
               <p>Veterinaria Animals</p> 
           </div>
