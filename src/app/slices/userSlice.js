@@ -18,6 +18,7 @@ export const userSlice = createSlice({
     initialState,
     reducers: {
         setUserData: (state, action) => {
+            console.log('action', action)
         const { userInfo, token } = action.payload
             return {
                 ...state,
@@ -25,7 +26,8 @@ export const userSlice = createSlice({
                 userInfo: {
                     email:userInfo.email,
                     firstName: userInfo.firstName,
-                    role: userInfo.role
+                    role: userInfo.role,
+                    id: userInfo.id
                 },
             }
         },

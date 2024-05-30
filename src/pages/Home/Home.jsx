@@ -11,7 +11,7 @@ export const Home = () => {
           <div className="overlay"></div>
           <img src="../src/images/mascotas.jpg"></img>
           <div className="content">
-              <p>Veterinaria Animals</p> 
+          <p>Veterinaria Animals</p> 
           </div>
       </div>
     </>

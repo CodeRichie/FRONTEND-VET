@@ -108,7 +108,7 @@ export const Register = () => {
         </Form.Group>
 
         <div className="d-grid my-5">
-          <Button variant="primary" size="lg" type="submit">
+          <Button variant="dark" size="lg" type="submit">
             Sign up
           </Button>
         </div>
