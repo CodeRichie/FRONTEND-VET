@@ -4,7 +4,7 @@ import "./AllUsers.css";
 import Avatar from 'react-avatar';
 import Header from "../../components/Header/Header";
 import { Link, useNavigate } from "react-router-dom";
-import { isAuthenticated, amIClient,amIDoctor, amIAdmin } from "../../app/slices/userSlice";
+import { isAuthenticated, amIClient, amIDoctor, amIAdmin } from "../../app/slices/userSlice";
 
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from 'mdb-react-ui-kit';
@@ -33,29 +33,29 @@ export const AllUsers = () => {
 
 	return (
 		<>
-		<Header />
-		{ <div className="charactersDesign">
-			<ol>
-				{users.map(({ email, firstName, lastName, phone, id }) => {
-					return (
-						<div key={id} className="cardCharacter">
-							<Avatar size={50} round="50px" name={firstName} />
-							<div className="contactDesign">
-								<div className="contactName">
-									<p className="firstName">{`${lastName}, ${firstName}`}</p>
-								</div>
-								
-								<div className="contactData">
-									<p className="phone">{phone}</p>
-									<p className="email">{email}</p>
+			<Header />
+			{<div className="charactersDesign">
+				<ol>
+					{users.map(({ email, firstName, lastName, phone, id }) => {
+						return (
+							<div key={id} className="cardCharacter">
+								<Avatar size={50} round="50px" name={firstName} />
+								<div className="contactDesign">
+									<div className="contactName">
+										<p className="firstName">{`${lastName}, ${firstName}`}</p>
+									</div>
+
+									<div className="contactData">
+										<p className="phone">{phone}</p>
+										<p className="email">{email}</p>
+									</div>
 								</div>
 							</div>
-						</div>
-					);
-				})}
+						);
+					})}
 
-			</ol>
-		</div> }
+				</ol>
+			</div>}
 		</>
 	);
 };

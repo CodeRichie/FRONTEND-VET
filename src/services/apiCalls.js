@@ -47,7 +47,7 @@ export const getAllUsers = async (token) => {
 
 export const bringAllCharacters = async () => {
   const res = await axios.get(`${API_URL}/doctors` /*headers*/);
-  const [doctors,count] = res.data
+  const [doctors, count] = res.data
   return doctors;
 };
 
@@ -101,7 +101,7 @@ export const bringCharacterById = async (id) => {
 export const bringAllUsersCall = async (token) => {
   const config = {
     headers: {
-      Authorization: `Bearer ${token}` 
+      Authorization: `Bearer ${token}`
     }
   }
 
@@ -135,7 +135,7 @@ export const createAppointments = async (token, body) => {
   const config = {
     headers: {
       "Authorization": `Bearer ${token}`,
-    }, 
+    },
 
   }
   return axios.post(`${API_URL}appointments/create`, body, config)

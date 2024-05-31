@@ -9,8 +9,8 @@ export const DetailCharacter = () => {
 	const [detailCharacter, setDetailCharacter] = useState([]);
 	let { id } = useParams()
 	console.log('id', id)
-	console.log('first', detailCharacter)
-	const bringDetailedCharacter =  () => {
+	console.log('first', detailDoctor)
+	const bringDetailedCharacter = () => {
 		bringCharacterById(id)
 			.then((res) => {
 				setDetailCharacter(res);
@@ -22,8 +22,8 @@ export const DetailCharacter = () => {
 
 	useEffect(bringDetailedCharacter, [])
 
-	return ( 
-	<><Header /><div className="charactersDesign">
+	return (
+		<><Header /><div className="caractersDesign">
 		</div></>
-);
+	);
 };
