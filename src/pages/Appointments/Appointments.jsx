@@ -101,6 +101,7 @@ export const Appointments = () => {
 									descripción: {appointment.description}
 								</div>
 							</div>
+							
 						)
 					})}
 				</div>

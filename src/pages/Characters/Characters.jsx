@@ -5,8 +5,6 @@ import Avatar from 'react-avatar';
 import Header from "../../components/Header/Header";
 import { Link, useNavigate } from "react-router-dom";
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from 'mdb-react-ui-kit';
-
 
 
 export const Characters = () => {

@@ -129,6 +129,7 @@ export const deleteUserById = async (id, token) => {
 }
 
 
+
 export const createAppointments = async (token, body) => {
   console.log('token en api calls', token)
   console.log('body en api calls', body)
