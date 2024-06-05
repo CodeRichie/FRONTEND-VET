@@ -12,6 +12,14 @@
 }
 .appointment {
     margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #d1d1d1;
+}
+.appointment:last-child {
+    border-bottom: 0;
+}
+.appointment-data {
+    text-align: left;
 }
 .create-appointment-container {
     width: 40%;
@@ -19,4 +27,31 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: linear .2s;
+}
+.editIcon {
+    background-color: #0d6efd;
+}
+.editIcon:hover {
+    background-color: #5196ff;
+}
+.deleteIcon {
+    background-color: #f42f2f;
+}
+.deleteIcon:hover {
+    background-color: #f14848;
 }

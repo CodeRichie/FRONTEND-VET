@@ -11,7 +11,7 @@ import { getUserData, isAuthenticated, amIAdmin, editUserData } from "../../../a
 
 
 
-export const CreateAppointments = () => {
+export const CreateAppointments = ({onCreate}) => {
   const test = ''
   const navigate = useNavigate();
   const { state } = useLocation();
@@ -40,6 +40,7 @@ export const CreateAppointments = () => {
 
 
   const onSubmit = async (data) => {
+    console.log('data', data)
     const appointment = await createAppointments(token, data);
   };
 
@@ -104,7 +105,8 @@ export const CreateAppointments = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formGroupPassword">
               <Form.Label>Cliente</Form.Label>
-              <Form.Select aria-label="Default select example"                  {...register("client")}
+              <Form.Select aria-label="Default select example"
+              {...register("client")}
                 isInvalid={!!errors.client}
 >
                 {users && users.map((user, index) => (
@@ -116,7 +118,7 @@ export const CreateAppointments = () => {
               </Form.Control.Feedback>
             </Form.Group>
             <div className="d-grid my-5">
-              <Button variant="primary" size="lg" type="submit">
+              <Button variant="primary" size="lg" type="submit" onClick={onCreate}>
                 Crear
               </Button>
             </div>
