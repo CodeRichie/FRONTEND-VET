@@ -96,7 +96,7 @@ export const Appointments = () => {
 					{loaded && appointments.map((appointment, index) => {
 						return (
 							<>
-								{!isClient && isAdmin && (
+								{!isClient && (
 									<div className="icons">
 										<a className="icon editIcon" onClick={() => onEditAppointment(appointment)}>
 											<img
